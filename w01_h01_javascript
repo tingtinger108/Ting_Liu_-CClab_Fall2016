@@ -1,0 +1,41 @@
+ w01_h01_javascript/
+ 
+html/
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>Ting Liu</title>
+	<meta charset="utf-8">
+	<link rel = "stylesheet" href="css/interactive.css"/>
+	<script language = "javascript" src = "js/interactive.js"> </script>
+</head>
+<body>
+<p id="pay" onclick="payStatus()">Do Not Touch Me</p>
+</body>
+</html>
+          
+           
+css/
+body{
+height:100vh;
+width:100vw;
+}
+#pay{
+	color:pink;
+	position:absolute;
+	left:20%;
+	top:20%;
+	font-size: 100px;
+}
+         
+
+js/
+ function payStatus(){
+	document.getElementById("pay").innerHTML = "Told You Not to Touch!";
+	document.getElementById("pay").style.color = "red";
+}
+
+
+README.md
+
